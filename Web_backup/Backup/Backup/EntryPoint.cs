@@ -11,8 +11,8 @@ namespace Backup
     {
         public static void Main(string[] args)
         {
-            FileController fileController = new FileController();
-            fileController.backupAll("H:\\backup", "H:\\tod");
+            FileService fileService = new FileService();
+            fileService.directoryContent("H:\\backup", "H:\\tod"); //откуда куда копируется
         }
     }
 }
